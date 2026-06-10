@@ -1,0 +1,61 @@
+"""Stable metadata/runtime constants shared across metadata seams."""
+
+from __future__ import annotations
+
+import os
+
+from features import DEFAULT_MIN_WINDOW_EVENTS, DEFAULT_WINDOW_SECONDS, DEFAULT_WINDOW_STEP_SECONDS
+from paths import live_session_dir, models_dir, sessions_dir
+
+MODELS_DIR = models_dir()
+SESSIONS_DIR = sessions_dir()
+LIVE_SESSION_DIR = live_session_dir()
+
+MODEL_FILE = os.path.join(MODELS_DIR, "model.pkl")
+CLASSIFIER_FILE = os.path.join(MODELS_DIR, "classifier.pkl")
+METADATA_FILE = os.path.join(MODELS_DIR, "metadata.json")
+DEEP_SEQUENCE_ARTIFACT_FILENAME = "sequence_model.pt"
+
+WINDOW_SECONDS = float(DEFAULT_WINDOW_SECONDS)
+WINDOW_STEP_SECONDS = float(DEFAULT_WINDOW_STEP_SECONDS)
+ACTIVE_WINDOW_SCALES = tuple(sorted({max(1.0, WINDOW_SECONDS / 2.0), WINDOW_SECONDS}))
+FEATURE_SCHEMA_VERSION = "sequence-multiscale-v1"
+FEATURE_WINDOW_STRATEGY = "multi_scale_sequence_concatenated_per_anchor"
+CANDIDATE_BUNDLE_DIRNAME = "candidate_bundle"
+PRODUCTION_BUNDLE_DIRNAME = "production_bundle"
+ACTIVE_RUNTIME_POINTER_FILE = "active_runtime_bundle.json"
+RUNTIME_POINTER_SCHEMA_VERSION = "runtime-pointer-v2"
+RUNTIME_POINTER_HMAC_LABEL = b"bioauth.runtime_pointer.v2"
+RUNTIME_SCHEMA_POLICY_VERSION = "runtime-schema-v1"
+CONTEXT_ROUTING_VERSION = "context-router-v1"
+ROUTER_CONTEXTS = ("keyboard_heavy", "mouse_heavy", "mixed", "short_session")
+CONTEXT_ROUTER_MIN_CONFIDENCE = 0.58
+MIN_CONTEXT_POSITIVE_WINDOW_SAMPLES = 5
+MIN_CONTEXT_POSITIVE_SESSION_SUPPORT = 2
+PREDICT_WINDOW_STEP_SECONDS = max(3.0, min(ACTIVE_WINDOW_SCALES) / 2.0)
+MIN_WINDOW_EVENTS = int(DEFAULT_MIN_WINDOW_EVENTS)
+MAX_TRAIN_WINDOWS_PER_SESSION = 24
+MAX_PREDICT_WINDOWS = 4
+MIN_POSITIVE_WINDOW_SAMPLES = 6
+MIN_NEGATIVE_WINDOW_SAMPLES = 6
+MAX_REFERENCE_NEGATIVE_SESSIONS = 24
+MIN_REQUIRED_ENROLLMENT_SESSIONS = 8
+MAX_ENROLLMENT_TRAINING_SESSIONS = 15
+RECOMMENDED_ENROLLMENT_SESSIONS = 15
+
+SHADOW_MIN_SESSIONS = 8
+SHADOW_MAX_SESSIONS = 15
+SHADOW_EVAL_SESSIONS = 10
+SHADOW_PROMOTE_THRESHOLD = 15
+SHADOW_DISCARD_THRESHOLD = -10
+SHADOW_BACKUP_DAYS = 30
+SHADOW_LOCK_STALE_SECONDS = 60.0
+
+KB_HEADER = "key,event,timestamp"
+MS_HEADER = "x,y,event,timestamp"
+
+MODEL_LIFECYCLE_LOCK_STALE_SECONDS = 180.0
+
+os.makedirs(MODELS_DIR, exist_ok=True)
+
+__all__ = [name for name in globals() if name.isupper()]

@@ -1,0 +1,12 @@
+# Runtime dependencies pinned for reproducible local installs and packaging.
+cryptography==46.0.4
+numpy==2.3.5
+pandas==2.2.3
+scipy==1.17.0
+joblib==1.5.3
+pynput==1.8.1
+pyod==2.0.5
+scikit-learn==1.8.0
+PySide6==6.9.0
+pygame==2.6.1
+qrcode[pil]==8.2

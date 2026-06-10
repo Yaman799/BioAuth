@@ -1,0 +1,4 @@
+# BioAuth Codex helper: runtime lifecycle hotspots
+rg "startProtected|stopProductionMonitor|pending_monitor_start|logger_ready_timeout|monitor_start_timeout|monitor_exited_after_ready|logger_start_lost" bridge src monitor_core qml
+rg "write_worker_heartbeat|read_worker_heartbeat|clear_worker_heartbeat|worker_pair|process_pair_state" bridge src monitor_core
+rg "technical_failure|risk_engine_stopped|resume_pending|protected_starting|protected_active" bridge src monitor_core qml

@@ -1,0 +1,11 @@
+{
+  "update_repo_owner": "CHANGE_ME_OWNER",
+  "update_repo_name": "BioAuth",
+  "update_channel": "beta",
+  "update_api_base": "https://api.github.com",
+  "manifest_name": "bioauth-update.json",
+  "verification": "sha256",
+  "signing_required": false,
+  "silent_install": false,
+  "notes": "Edit update_repo_owner/update_repo_name before a manual GitHub upload, or let GitHub Actions regenerate this file during release builds. Updates are verified by SHA256; silent install is intentionally disabled."
+}

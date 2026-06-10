@@ -1,0 +1,5 @@
+# Optional Face Confirmation runtime dependencies.
+# Install this only for local/dev face enrollment and confirmation validation.
+# It provides cv2 camera support plus the OpenCV FaceDetectorYN/FaceRecognizerSF APIs.
+-r requirements.txt
+opencv-contrib-python>=4.10,<5

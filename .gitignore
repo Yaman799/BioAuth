@@ -1,0 +1,85 @@
+﻿# Local AI/tool workspaces
+.claude/
+.codex/
+AGENTS.md
+
+# Internal docs / development-only
+docs/
+hybrid_candidates/
+legacy/
+
+# Python environments/cache
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Build/package outputs
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Runtime/local generated data
+data/
+logs/
+reports/
+archive/
+live-session/
+runtime_data/
+control/
+worker_heartbeats/
+*.log
+*.tmp
+*.bak
+*.backup
+*.lock
+
+# Captured behavioral data / local DBs
+*.csv
+*.db
+*.sqlite
+*.sqlite3
+
+# Secrets / local config
+.env
+.env.*
+*.key
+*.pem
+*.pfx
+*.crt
+*.cer
+secrets.json
+license_private*
+private_key*
+
+# Dev/demo/internal files
+build_exe_demo_classic.bat
+run_desktop_dev_lock_override.bat
+requirements-hybrid.txt
+requirements-pro.txt
+requirements-dev.txt
+requirements-audit.txt
+
+# Android / web generated files if present
+node_modules/
+.gradle/
+local.properties/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Extra public cleanup
+hybrid_*.py
+shadow_core/
+shadow_model.py
+desktop_app_tk.py

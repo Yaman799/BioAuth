@@ -1,0 +1,4 @@
+# Stable build toolchain for Windows packaging.
+# Keep PyInstaller and pyinstaller-hooks-contrib roughly in sync.
+pyinstaller==6.19.0
+pyinstaller-hooks-contrib>=2026.1,<2027

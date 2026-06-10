@@ -1,0 +1,125 @@
+{
+  "version": 2,
+  "slides": [
+    {
+      "id": "what_bioauth_does",
+      "order": 10,
+      "enabled": true,
+      "tone": "primary",
+      "badge": "01",
+      "image_only": true,
+      "image": "config/onboarding_assets/fullscreen/onboarding_01_fullscreen_1920x1080.png",
+      "image_alt": {
+        "ar": "ماذا يفعل BioAuth",
+        "en": "What BioAuth Does"
+      },
+      "image_max_width": 1920,
+      "image_max_height": 1080
+    },
+    {
+      "id": "local_data",
+      "order": 20,
+      "enabled": true,
+      "tone": "success",
+      "badge": "02",
+      "image_only": true,
+      "image": "config/onboarding_assets/fullscreen/onboarding_02_fullscreen_1920x1080.png",
+      "image_alt": {
+        "ar": "بياناتك تبقى محلية",
+        "en": "Your Data Stays Local"
+      },
+      "image_max_width": 1920,
+      "image_max_height": 1080
+    },
+    {
+      "id": "face_verification",
+      "order": 30,
+      "enabled": true,
+      "tone": "details",
+      "badge": "03",
+      "image_only": true,
+      "image": "config/onboarding_assets/fullscreen/onboarding_03_fullscreen_1920x1080.png",
+      "image_alt": {
+        "ar": "متى يتم استخدام التحقق بالوجه",
+        "en": "When Face Verification Is Used"
+      },
+      "image_max_width": 1920,
+      "image_max_height": 1080
+    },
+    {
+      "id": "protected_session",
+      "order": 40,
+      "enabled": true,
+      "tone": "success",
+      "badge": "04",
+      "image_only": true,
+      "image": "config/onboarding_assets/fullscreen/onboarding_04_fullscreen_1920x1080.png",
+      "image_alt": {
+        "ar": "ماذا تعني الجلسة المحمية",
+        "en": "What a Protected Session Means"
+      },
+      "image_max_width": 1920,
+      "image_max_height": 1080
+    },
+    {
+      "id": "training_improvement",
+      "order": 50,
+      "enabled": true,
+      "tone": "details",
+      "badge": "05",
+      "image_only": true,
+      "image": "config/onboarding_assets/fullscreen/onboarding_05_fullscreen_1920x1080.png",
+      "image_alt": {
+        "ar": "متى يبدأ التدريب والتحسين",
+        "en": "When Training & Improvement Start"
+      },
+      "image_max_width": 1920,
+      "image_max_height": 1080
+    },
+    {
+      "id": "first_use",
+      "order": 60,
+      "enabled": true,
+      "tone": "details",
+      "badge": "06",
+      "image_only": true,
+      "image": "config/onboarding_assets/fullscreen/onboarding_06_fullscreen_1920x1080.png",
+      "image_alt": {
+        "ar": "ما تحتاجه قبل الاستخدام الأول",
+        "en": "What You Need Before First Use"
+      },
+      "image_max_width": 1920,
+      "image_max_height": 1080
+    },
+    {
+      "id": "privacy_consent",
+      "order": 70,
+      "enabled": true,
+      "tone": "details",
+      "badge": "07",
+      "image_only": true,
+      "image": "config/onboarding_assets/fullscreen/onboarding_07_fullscreen_1920x1080.png",
+      "image_alt": {
+        "ar": "الخصوصية والموافقة",
+        "en": "Privacy & Consent"
+      },
+      "image_max_width": 1920,
+      "image_max_height": 1080
+    },
+    {
+      "id": "all_set",
+      "order": 80,
+      "enabled": true,
+      "tone": "primary",
+      "badge": "08",
+      "image_only": true,
+      "image": "config/onboarding_assets/fullscreen/onboarding_08_fullscreen_1920x1080.png",
+      "image_alt": {
+        "ar": "أنت جاهز",
+        "en": "You’re All Set!"
+      },
+      "image_max_width": 1920,
+      "image_max_height": 1080
+    }
+  ]
+}

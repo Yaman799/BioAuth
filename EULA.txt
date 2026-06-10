@@ -1,0 +1,15 @@
+BioAuth Desktop (Beta) - End User License Agreement (EULA)
+Last updated: 2026-04-24
+
+This is beta software provided "as is", without warranty of any kind.
+
+By installing or using BioAuth Desktop, you agree that:
+
+1) BioAuth may monitor keyboard and mouse dynamics locally to estimate session risk.
+2) BioAuth may lock the workstation when it detects high risk according to its local policy.
+3) BioAuth stores local account, settings, session, model, and runtime state on this device.
+4) Optional incident evidence capture is disabled by default and requires explicit in-app consent before any screenshot or webcam evidence may be saved.
+5) You are responsible for enabling, disabling, and configuring the software on your device.
+6) The authors are not liable for any damages, data loss, false rejection, lockout, or productivity loss arising from use.
+
+For privacy details, read PRIVACY_POLICY.md included with the installation.
