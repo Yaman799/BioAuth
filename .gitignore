@@ -83,3 +83,6 @@ hybrid_*.py
 shadow_core/
 shadow_model.py
 desktop_app_tk.py
+
+# Disable GitHub Actions until CI is ready
+.github/
